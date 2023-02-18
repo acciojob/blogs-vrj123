@@ -35,10 +35,10 @@ public class BlogService {
 
     public void deleteBlog(int blogId){
         //delete blog and corresponding images
-        Blog blog=blogRepository1.findById(blogId).get();
-        User user=blog.getUser();
-        user.getBlogList().remove(blog);
+//        Blog blog=blogRepository1.findById(blogId).get();
+//        User user=blog.getUser();
+//        user.getBlogList().remove(blog);
         blogRepository1.deleteById(blogId);
-        userRepository1.save(user);
+//        userRepository1.save(user);
     }
 }

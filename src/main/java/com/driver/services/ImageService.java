@@ -28,11 +28,11 @@ public class ImageService {
     }
 
     public void deleteImage(Integer id){
-        Image image=imageRepository2.findById(id).get();
-        Blog blog=image.getBlog();
-        blog.getImageList().remove(image);
+//        Image image=imageRepository2.findById(id).get();
+//        Blog blog=image.getBlog();
+//        blog.getImageList().remove(image);
         imageRepository2.deleteById(id);
-        blogRepository2.save(blog);
+//        blogRepository2.save(blog);
 
     }
 
