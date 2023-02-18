@@ -46,9 +46,9 @@ public class ImageService {
         int ih=Integer.parseInt(imageDimension[1]);
         int sl=Integer.parseInt(screenDimension[0]);
         int sh=Integer.parseInt(screenDimension[1]);
-        int screenArea=sl*sh;
-        int imageArea=il*ih;
-        int count=screenArea/imageArea;
+//        int screenArea=sl*sh;
+//        int imageArea=il*ih;
+        int count=(sl/il)*(sh/ih);
         return count;
     }
 }
